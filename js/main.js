@@ -5,7 +5,7 @@ newLogo.src = "./img/qqq.png";
 elImages.setAttribute("class"," d-flex justify-content-around mb-5 mt-3"  );
 elImages.appendChild(newLogo);
 
-document.body.style.backgroundColor = '	#48d1cc';
+document.body.style.backgroundColor ="#48d1cc";
 
 for(var film of pokemons){
   
@@ -17,7 +17,6 @@ for(var film of pokemons){
   var newTime = document.createElement("time");
   var newInfo = document.createElement("p");
   var newCand = document.createElement("span");
-  // var newWeak = document.createElement("span");
   
   
   newSpan.textContent = film.num;
@@ -28,7 +27,7 @@ for(var film of pokemons){
   
   newCand.textContent = film.candy;
 
-  // newWeak.textContent = film.weaknesses;
+
   
   // (ul) style
   elList.setAttribute("class","p-0 m-0 d-flex flex-wrap justify-content-evenly align-items-center");
@@ -57,8 +56,7 @@ for(var film of pokemons){
   // (span candy) style
   newCand.setAttribute("class","text-center ");
 
-  // // (span candy) style
-  // newWeak.setAttribute("class","text-center d-blok ");
+
 
   
   newItem.appendChild(newTittle);
@@ -67,7 +65,6 @@ for(var film of pokemons){
   newItem.appendChild(newSpan);
   newInfo.appendChild(newTime);
   newInfo.appendChild(newCand);
-  // newInfo.appendChild(newWeak);
   elList.appendChild(newItem);
   
 }
